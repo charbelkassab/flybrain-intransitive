@@ -1,0 +1,12 @@
+.venv
+.venv/
+data
+data/
+videos/
+ref_site/
+__pycache__/
+*.pyc
+.DS_Store
+assets/rock.*
+assets/paper.*
+assets/scissors.*

@@ -1,0 +1,160 @@
+{
+  "patterns": {
+    "fly:goal": {
+      "approach_minus_escape": 6.666666666666667,
+      "descending_active": 86
+    },
+    "fly:capture": {
+      "approach_minus_escape": 6.166666666666667,
+      "descending_active": 56
+    },
+    "fly:progress": {
+      "approach_minus_escape": 2.9166666666666665,
+      "descending_active": 93
+    },
+    "fly:danger": {
+      "approach_minus_escape": -115.91666666666667,
+      "descending_active": 100
+    },
+    "fly:base_threat": {
+      "approach_minus_escape": -196.91666666666666,
+      "descending_active": 75
+    },
+    "scrambled:goal": {
+      "approach_minus_escape": 0.0,
+      "descending_active": 0
+    },
+    "scrambled:capture": {
+      "approach_minus_escape": 0.0,
+      "descending_active": 12
+    },
+    "scrambled:progress": {
+      "approach_minus_escape": 0.0,
+      "descending_active": 0
+    },
+    "scrambled:danger": {
+      "approach_minus_escape": 0.0,
+      "descending_active": 2
+    },
+    "scrambled:base_threat": {
+      "approach_minus_escape": 0.0,
+      "descending_active": 0
+    }
+  },
+  "matches": {
+    "fly brain, zero training vs random": {
+      "win": 100,
+      "draw": 0,
+      "loss": 0,
+      "reasons": {
+        "base capture": 95,
+        "no legal moves": 5
+      }
+    },
+    "fly brain + readout vs random": {
+      "win": 100,
+      "draw": 0,
+      "loss": 0,
+      "reasons": {
+        "base capture": 100
+      }
+    },
+    "scrambled brain, zero training vs random": {
+      "win": 36,
+      "draw": 34,
+      "loss": 30,
+      "reasons": {
+        "base capture": 60,
+        "stagnation": 25,
+        "no legal moves": 6,
+        "null": 9
+      }
+    },
+    "scrambled brain + readout vs random": {
+      "win": 77,
+      "draw": 13,
+      "loss": 10,
+      "reasons": {
+        "stagnation": 13,
+        "base capture": 30,
+        "no legal moves": 57
+      }
+    },
+    "random moves vs random": {
+      "win": 31,
+      "draw": 30,
+      "loss": 39,
+      "reasons": {
+        "base capture": 68,
+        "stagnation": 22,
+        "no legal moves": 2,
+        "null": 8
+      }
+    },
+    "greedy reference rule (no brain) vs random": {
+      "win": 100,
+      "draw": 0,
+      "loss": 0,
+      "reasons": {
+        "base capture": 94,
+        "no legal moves": 6
+      }
+    },
+    "fly brain, zero training vs greedy": {
+      "win": 55,
+      "draw": 0,
+      "loss": 45,
+      "reasons": {
+        "base capture": 99,
+        "no legal moves": 1
+      }
+    },
+    "fly brain + readout vs greedy": {
+      "win": 38,
+      "draw": 0,
+      "loss": 62,
+      "reasons": {
+        "no legal moves": 34,
+        "base capture": 66
+      }
+    },
+    "scrambled brain, zero training vs greedy": {
+      "win": 0,
+      "draw": 0,
+      "loss": 100,
+      "reasons": {
+        "base capture": 99,
+        "no legal moves": 1
+      }
+    },
+    "scrambled brain + readout vs greedy": {
+      "win": 0,
+      "draw": 0,
+      "loss": 100,
+      "reasons": {
+        "base capture": 64,
+        "no legal moves": 36
+      }
+    },
+    "random moves vs greedy": {
+      "win": 0,
+      "draw": 0,
+      "loss": 100,
+      "reasons": {
+        "base capture": 88,
+        "no legal moves": 12
+      }
+    },
+    "greedy reference rule (no brain) vs greedy": {
+      "win": 55,
+      "draw": 0,
+      "loss": 45,
+      "reasons": {
+        "base capture": 96,
+        "no legal moves": 4
+      }
+    }
+  },
+  "fly_readout_r2_heldout": 0.9929009169076985,
+  "scrambled_readout_r2_heldout": -0.09130931653085184
+}
